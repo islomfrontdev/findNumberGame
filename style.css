@@ -1,0 +1,161 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(./images/mainbg1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body h1,
+body p,
+body span {
+  background: #00ff00;
+  background: -webkit-gradient(linear, right top, left top, from(#00ff00), to(#ff0000));
+  background: linear-gradient(to left, #00ff00 0%, #ff0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.sticker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.sticker .stickerImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.numbersBox {
+  width: 100px;
+  height: 100px;
+  -webkit-animation: numberAnimate 3s linear infinite;
+          animation: numberAnimate 3s linear infinite;
+}
+
+.numbersBox img {
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes numberAnimate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes numberAnimate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#number {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1fe5e3), color-stop(#00c1f2), color-stop(#0098ff), color-stop(#0067f5), to(#4c10c2));
+  background-image: linear-gradient(to bottom, #1fe5e3, #00c1f2, #0098ff, #0067f5, #4c10c2);
+  color: #f8f8f8;
+}
+
+#number::-webkit-input-placeholder {
+  color: white;
+}
+
+#number:-ms-input-placeholder {
+  color: white;
+}
+
+#number::-ms-input-placeholder {
+  color: white;
+}
+
+#number::placeholder {
+  color: white;
+}
+
+#modalBoxTrue, #modalBoxGameOver, #enterNumber {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 0;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./images/mainbg.gif);
+}
+
+#modalBoxTrue img, #modalBoxGameOver img, #enterNumber img {
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 0 20px;
+  -webkit-box-shadow: 15px 16px 98px 9px rgba(7, 64, 234, 0.2);
+  box-shadow: 15px 16px 98px 9px rgba(7, 64, 234, 0.2);
+  margin: 0 30px;
+}
+
+#modalBoxTrue .btn:hover, #modalBoxGameOver .btn:hover, #enterNumber .btn:hover {
+  color: #fff;
+}
+
+.btn {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1fe5e3), color-stop(#00c1f2), color-stop(#0098ff), color-stop(#0067f5), to(#4c10c2));
+  background-image: linear-gradient(to bottom, #1fe5e3, #00c1f2, #0098ff, #0067f5, #4c10c2);
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+#equalText {
+  position: absolute;
+  bottom: 40px;
+}
+/*# sourceMappingURL=style.css.map */

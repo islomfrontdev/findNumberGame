@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(./images/mainbg1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1,
+  p,
+  span {
+    background: #00ff00;
+    background: -webkit-linear-gradient(to left, #00ff00 0%, #ff0000 100%);
+    background: -moz-linear-gradient(to left, #00ff00 0%, #ff0000 100%);
+    background: linear-gradient(to left, #00ff00 0%, #ff0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+}
+.sticker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .stickerImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.numbersBox {
+  width: 100px;
+  height: 100px;
+  animation: numberAnimate 3s linear infinite;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes numberAnimate {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+#number {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom,
+    #1fe5e3,
+    #00c1f2,
+    #0098ff,
+    #0067f5,
+    #4c10c2
+  );
+  color: rgb(248, 248, 248);
+  &::placeholder {
+    color: white;
+  }
+}
+%modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 0 20px;
+    -webkit-box-shadow: 15px 16px 98px 9px rgba(7, 64, 234, 0.2);
+    -moz-box-shadow: 15px 16px 98px 9px rgba(7, 64, 234, 0.2);
+    box-shadow: 15px 16px 98px 9px rgba(7, 64, 234, 0.2);
+    margin: 0 30px;
+  }
+  .btn {
+    &:hover {
+      color: #fff;
+    }
+  }
+  background-image: url(./images/mainbg.gif);
+}
+#modalBoxTrue {
+  @extend %modal;
+}
+#modalBoxGameOver {
+  @extend %modal;
+}
+#enterNumber {
+  @extend %modal;
+}
+.btn {
+  background-image: linear-gradient(
+    to bottom,
+    #1fe5e3,
+    #00c1f2,
+    #0098ff,
+    #0067f5,
+    #4c10c2
+  );
+  color: #fff;
+  border: none;
+  outline: none;
+}
+#equalText {
+  position: absolute;
+  bottom: 40px;
+}

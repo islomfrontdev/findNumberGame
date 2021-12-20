@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="d-flex align-items-center justify-content-center gap-5 my-5">
+      <div class="numbersBox" id="img1">
+        <img src="./images/one1-removebg-preview.png" alt="" />
+      </div>
+      <div class="numbersBox" id="img2">
+        <img src="./images/two-removebg-preview.png" alt="" />
+      </div>
+      <div class="numbersBox" id="img3">
+        <img src="./images/three-removebg-preview.png" alt="" />
+      </div>
+      <div class="numbersBox" id="img4">
+        <img src="./images/four-removebg-preview.png" alt="" />
+      </div>
+      <div class="numbersBox" id="img5">
+        <img src="./images/five-removebg-preview.png" alt="" />
+      </div>
+    </div>
+
+    <div id="modalBoxTrue" class="d-none">
+      <div><img src="./images/victory.gif" alt="" class="my-3" /></div>
+      <button class="btn" onclick="reload()">
+        <i class="fa fa-refresh" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="modalBoxGameOver" class="d-none">
+      <img src="./images/game-over-balthazar-bratt.gif" alt="" class="my-3" />
+      <button class="btn btn-primary" onclick="reload()">
+        <i class="fa fa-refresh" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="enterNumber" class="d-none">
+      <h1>Iltimos son kiriting</h1>
+      <img src="./images/ohno.gif" alt="" class="my-3" />
+      <button class="btn btn-primary" onclick="continueGame()">
+        Davom etish
+      </button>
+    </div>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center"
+    >
+      <h1>Kompyuter o'ylagan sonni toping</h1>
+
+      <div class="sticker d-flex">
+        <p class="fs-1 m-0">Urinishlar soni : <span id="chance"></span></p>
+        <div>
+          <img src="./images/sad5.png" alt="" class="stickerImg" id="sadImg" />
+        </div>
+      </div>
+
+      <div class="d-flex gap-2 mt-5">
+        <input
+          id="number"
+          placeholder="1-100 oraliqda son kiriting"
+          required="true"
+        />
+        <button class="btn btn-primary" onclick="check()">
+          Tekshirish
+        </button>
+      </div>
+    </div>
+    <p id="equalText" class="fs-2 my-5"></p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
